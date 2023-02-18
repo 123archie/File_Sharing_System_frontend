@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="upload.css" />
+    <title>Document</title>
+   </head>
+  <body id="body">
+    <nav>
+      <a><div id="hamburger" onclick="openNav()">
+          <iconify-icon
+            icon="radix-icons:hamburger-menu"
+            id="hamburger_menu"></iconify-icon></div
+      ></a>
+    </nav>
+    <div id="sidebar" class="mySidebar">
+      <div id="crossicon">
+        <a href="javascript:void(0)" id="cross" onclick="closeNav()"></a>
+      </div>
+      <br /><br />
+      <div class="settings">
+        <a href="#">Language Settings</a>
+        <a href="#">Account Settings</a>
+      </div>
+    </div>
+<!-- <<<<<<< HEAD
+    <div class="main-div">
+      <div id="file_transfer">
+        <img
+          src="images/file-transfer-concept-backup-data-technology-cloud-upload-download_199064-156-removebg-preview.png"
+          alt="" />
+      </div>
+      <div class="content">
+        <div id="dropbox">
+          <input type="file" name="InputFile" id="fileInput" />
+          <div class="icon">
+            <iconify-icon
+              icon="akar-icons:circle-plus"
+              style="color: #18a292"
+              width="130"
+              height="130"
+              id="plus"></iconify-icon>
+            
+          </div>
+
+          <p id="Droptext">Drop files here</p>
+        </div>
+
+        <div class="upload">
+          <form action="" method="post">
+            <input id="fileinput" type="file" hidden />
+            <input
+              type="button"
+              value="Upload File"
+              onclick="upload()"
+              id="button" />
+            <input type="submit" id="submitfile" hidden />
+          </form>
+        </div>
+      </div>
+    </div> -->
+<!-- ======= -->
+    <img src="images/file-transfer-concept-backup-data-technology-cloud-upload-download_199064-156-removebg-preview.png" alt="" id="file_transfer">
+    
+    <form id="dropbox" name="Form" method="POST" enctype="multipart/form-data">
+      <input type="file" name="myfile" id="fileInput">
+      <iconify-icon icon="akar-icons:circle-plus" style="color:#18a292;"width="130"height="130;" id="plus"></iconify-icon>
+      <p id="Droptext">Drop files here</p>
+    </form> 
+    <form method="POST" id="form"  enctype="application/x-www-form-urlencoded">
+      <input id="fileinput" type="file" hidden>
+      <input type="button" value="Upload File" id="button">
+      <input type="submit" id="submitfile" hidden>
+    </form>
+    <div class="formid">
+      <input type="text" name="download" id="download">
+    </div>
+<!-- >>>>>>> c00d724abb3d115c8300e5de2ddae349405ecb33 -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="upload.js"></script>
+    <!-- <script src="./routes/files.js" type="method"></script> -->
+  </body>
+</html>
+

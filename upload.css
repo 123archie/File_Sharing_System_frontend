@@ -1,0 +1,325 @@
+/** @format*/
+
+/*body {
+  background-image: linear-gradient(90deg, #60c1b6, #b5e9e3);
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+nav {
+  position: sticky;
+  background-color: #18a292;
+  border: 0%;
+  margin: 0%;
+}
+#hamburger_menu {
+  color: white;
+  content: url("https://api.iconify.design/radix-icons/hamburger-menu.svg?color=white&width=35&height=35");
+  margin: 1%;
+  cursor: pointer;
+}
+
+#hamburger {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: margin-left 0.5s;
+}
+
+a #hamburger:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #18a292;
+  overflow-x: hidden;
+  transition: 0.5s;
+  visibility: hidden;
+}
+#sidebar a {
+  padding: 10px 10px 10px 10px;
+  margin-top: 25px;
+  display: block;
+  font-family: "League spartan", sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.settings {
+  margin-top: 50px;
+  width: 100%;
+}
+.settings a {
+  width: 290px;
+}
+.settings a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#sidebar #cross {
+  float: top;
+  color: white;
+  content: url("https://api.iconify.design/akar-icons/cross.svg?color=white&width=20&height=20");
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+#crossicon :hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}*/
+
+/* .main-div {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin: 5% 0%;
+ margin: 2%; } */
+
+/*
+.content{
+  margin: 5%;
+}
+
+#file_transfer {
+  margin-top: 7%;} 
+
+
+
+#dropbox {
+  position: relative;
+  width: 30rem;
+  height: 15rem;
+  background-color: white;
+  margin: 3%;
+  margin-top: 3%;
+  padding: 2%;
+  border-radius: 35px;
+  border: 3px solid #18a292;
+}
+
+.icon{
+  display: flex;
+  justify-content: left;
+}
+
+.upload {
+  height: 250px;
+  text-align: center;
+  border-radius: 2%;
+  margin-right: 5%;
+}
+
+#plus {
+   padding: 2%;
+   margin-left:35%;
+}
+
+#Droptext {
+  font-family: "League Spartan", sans-serif;
+  font-size: 30px;
+  margin-left: 180px;
+  margin-top: 30px;
+  margin:5% 1%;
+  text-align: center;
+  color: #18a292;
+}
+
+#fileInput {
+  display: none;
+}
+@media all and (max-width: 760px){
+  body{
+    display: block;
+  }
+ #dropbox{
+   visibility: hidden;
+   max-width: 85%;
+   text-align: center;
+     }
+ #file_transfer{
+  visibility: hidden;
+ }
+ #plus{
+   text-align: center;
+   margin-left: 0%;
+}
+#Droptext{
+  font-family: 'League Spartan',sans-serif;
+  font-size: 30px;
+  margin-left: 0%;
+  margin-top: 30px;
+  color: #18a292;
+  
+}
+.main-div{
+  display: inline-block;
+  margin :auto;
+  
+}
+
+}
+  
+
+#button {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 30px;
+  height: 70px;
+  border: 2px #244541;
+  color: #244541;
+  cursor: pointer;
+  font-family: "League Spartan", sans-serif;
+}
+#button:hover {
+  color: white;
+  background-color: #244541;
+}*/
+body {
+  background-image: linear-gradient(90deg, #60c1b6, #b5e9e3);
+  margin: 0%;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+
+nav {
+  position: sticky;
+  background-color: #18a292;
+  border: 0%;
+  margin: 0%;
+}
+#hamburger_menu {
+  color: white;
+  content: url("https://api.iconify.design/radix-icons/hamburger-menu.svg?color=white&width=35&height=35");
+  margin: 1%;
+  cursor: pointer;
+}
+
+#hamburger {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: margin-left 0.5s;
+  
+}
+
+a #hamburger:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #18a292;
+  overflow-x: hidden;
+  transition: 0.5s;
+  visibility: hidden;}
+#sidebar a {
+  padding: 10px 10px 10px 10px;
+  margin-top: 25px;
+  display: block;
+  font-family: "League spartan", sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+  text-align: center;
+  
+ }
+
+.settings {
+  margin-top: 50px;
+  width: 100%;
+}
+.settings a{
+  width: 290px;
+}
+.settings a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#sidebar #cross {
+ float: top;
+  color: white;
+  content: url("https://api.iconify.design/akar-icons/cross.svg?color=white&width=20&height=20");
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+#crossicon :hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#file_transfer{
+  margin-top: 7%;
+  margin-left: 7%;
+ }
+
+#dropbox{
+  float: right;
+  width:600px;
+  height:300px;
+  background-color: white;
+  margin-right: 10%;
+  margin-top: 3%;
+  border-radius: 35px;
+  border: 3px solid #18a292;
+   }
+#plus{
+  margin-left: 225px;
+  margin-top: 45px;
+}
+#Droptext{
+  font-family: 'League Spartan',sans-serif;
+  font-size: 30px;
+  margin-left: 180px;
+  margin-top: 30px;
+  color: #18a292;
+  
+}
+#fileInput{
+  /* display: none; */
+  visibility: hidden;
+}
+#form #button{
+  width: 400px;
+  margin-left: 40px;
+  margin-top: 5%;
+  font-size: 30px;
+  height: 70px;
+  border: 2px #244541;
+  color: #244541;
+  cursor: pointer;
+  font-family: "League Spartan", sans-serif;
+}
+
+@media all and (max-width: 760px){
+  body{
+    display: block;
+  }
+ #dropbox{
+   visibility: hidden;
+     }
+ #file_transfer{
+  visibility: hidden;
+ }
+#form #button{
+  position: relative;
+  top: 0%;
+ width:device-width;
+}
+
+
+}
+
+
