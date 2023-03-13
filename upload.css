@@ -261,7 +261,7 @@ a #hamburger:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 #file_transfer{
-  margin-top: 7%;
+  margin-top: 3%;
   margin-left: 7%;
  }
 
@@ -293,14 +293,18 @@ a #hamburger:hover {
 }
 #form #button{
   width: 400px;
-  margin-left: 40px;
-  margin-top: 5%;
+  margin-left: 9.5%;
+  margin-top: 1%;
   font-size: 30px;
   height: 70px;
   border: 2px #244541;
   color: #244541;
   cursor: pointer;
   font-family: "League Spartan", sans-serif;
+}
+#form #button:hover{
+  color: white;
+  background-color: #244541;
 }
 
 @media all and (max-width: 760px){
@@ -318,8 +322,6 @@ a #hamburger:hover {
   top: 0%;
  width:device-width;
 }
-
-
 }
 
 
