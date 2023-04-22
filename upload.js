@@ -72,5 +72,6 @@ function uploadfiles() {
 //   textvalue.value=url
 // }
 function updateProgress(e){
-  console.log(e);
+  const percent=(e.loaded/e.length)*100;
+  console.log(percent);
 }
