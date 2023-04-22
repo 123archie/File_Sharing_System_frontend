@@ -53,8 +53,9 @@ function uploadfiles() {
   console.log(formData.entries());
   const xhr = new XMLHttpRequest;
   xhr.onreadystatechange = (e) => {
+    // const percent=
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
-      console.log(xhr.readyState);
+      console.log(xhr.response);
         }
   }
   xhr.open('POST', uploadURL, true);
