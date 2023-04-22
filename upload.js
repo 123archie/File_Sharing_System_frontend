@@ -10,6 +10,7 @@ const FILE = document.getElementById("fileinput");
 const UPLOAD = document.getElementById("button");
 const SUBMIT = document.getElementById("submitfile");
 const textvalue=document.querySelector("download");
+const bgProgress=document.querySelector("bgProgress");
 function closeNav() {
   document.getElementById("sidebar").style.width = "0";
 }
@@ -51,6 +52,7 @@ function uploadfiles() {
  
   console.log(formData.entries());
   const xhr = new XMLHttpRequest;
+  
   xhr.onreadystatechange = (e) => {
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
       console.log(xhr.response);
@@ -70,5 +72,5 @@ function uploadfiles() {
 function updateProgress(e){
   const percent=(e.loaded/e.total)*100;
   console.log(percent);
-  // bgProgress.style.width=`${percent}`
+  bgProgress.style.width=`${percent}`
 }
