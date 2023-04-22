@@ -46,16 +46,13 @@ document.getElementById("button").addEventListener("click", (e) => {
 });
 function uploadfiles() {
   var file = fileinput.files[0];
-  // console.log(file);
   var formData=new FormData(droparea);
- 
-  // console.log(formData.entries());
   formData.append('myfile', JSON.stringify(file[0]));
  
   console.log(formData.entries());
   const xhr = new XMLHttpRequest;
+  bgProgress=document.createElement("textarea");
   xhr.onreadystatechange = (e) => {
-    // const percent=
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
       console.log(xhr.response);
         }
@@ -74,4 +71,5 @@ function uploadfiles() {
 function updateProgress(e){
   const percent=(e.loaded/e.total)*100;
   console.log(percent);
+  bgProgress.style.width=`${percent}`
 }
