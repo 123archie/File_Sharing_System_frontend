@@ -4,7 +4,7 @@ let droparea = document.getElementById("dropbox");
 var form = document.getElementById("form");
 const fileinput = document.getElementById("fileInput");
 const uploadbtn = document.getElementById("upload_btn");
-const host="https://filesharing-blgk.onrender.com"
+const host="https://file-sharing-system-vl3s.onrender.com"
 const uploadURL=`${host}/test`
 const FILE = document.getElementById("fileinput");
 const UPLOAD = document.getElementById("button");
@@ -58,7 +58,7 @@ function uploadfiles() {
       document.querySelector(".upload").remove();
       document.body.appendChild(document.createTextNode("File uploaded successfully"));
       document.body.appendChild(document.createTextNode("Download link to the file:"));
-      textvalue.value=xhr.response;
+      textvalue.value=xhr.responseURL;
       document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
       console.log(xhr.response.value);
         }
