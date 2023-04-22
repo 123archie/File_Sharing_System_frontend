@@ -1,3 +1,5 @@
+const { log } = require("console");
+
 let droparea = document.getElementById("dropbox");
 var form = document.getElementById("form");
 const fileinput = document.getElementById("fileInput");
@@ -58,14 +60,17 @@ function uploadfiles() {
       console.log(xhr.response);
         }
   }
+  xhr.upload.onprogress=updateProgress;
   xhr.open('POST', uploadURL, true);
   xhr.setRequestHeader("Access-Control-Allow-Headers", "*");
   xhr.setRequestHeader("Access-Control-Allow-Methods", "*");
   console.log(formData.entries());
   xhr.send(formData);
 };
-const showLink=({file:url})=>{
-  console.log(url);
-  textvalue.value=url
+// const showLink=({file:url})=>{
+//   console.log(url);
+//   textvalue.value=url
+// }
+function updateProgress(e){
+  console.log(e);
 }
-
