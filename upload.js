@@ -70,5 +70,5 @@ function uploadfiles() {
 function updateProgress(e){
   const percent=(e.loaded/e.total)*100;
   console.log(percent);
-  bgProgress.style.width=`${percent}`
+  // bgProgress.style.width=`${percent}`
 }
