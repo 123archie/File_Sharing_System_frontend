@@ -58,7 +58,7 @@ function uploadfiles() {
       document.querySelector(".upload").remove();
       document.body.appendChild(document.createTextNode("File uploaded successfully"));
       document.body.appendChild(document.createTextNode("Download link to the file:"));
-      textvalue.value=xhr.responseURL;
+      textvalue.value=xhr.responseText;
       document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
       console.log(xhr.response.value);
         }
