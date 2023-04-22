@@ -55,10 +55,12 @@ function uploadfiles() {
   xhr.onreadystatechange = (e) => {
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
       document.querySelector(".upload").remove();
-      document.body.appendChild(document.createTextNode("File uploaded successfully"));
-      document.body.appendChild(document.createTextNode("Download link to the file:"));
+      // document.body.appendChild(document.createTextNode("File uploaded successfully"));
+      // document.createTextNode("File uploaded successfully").style.font="39px";
+      // document.body.appendChild(document.createTextNode("Download link to the file:"));
       showLink(JSON.parse(xhr.response));
-      document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
+      // document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
+      // document.createTextNode("This link will expire in 24 hrs.").style.textAlign="right";
       console.log(xhr.response);
         }
   }
