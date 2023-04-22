@@ -145,7 +145,18 @@ a #hamburger:hover {
   border-radius: 11px;
   
 }
+#download{
+  float:right;
+  width:600px;
+  height:40px;
+  margin-right: 10%;
+  font-size:x-large;
+  font-family: "League Spartan", sans-serif;
+  border:3px solid #18a292;
+  border-radius: 15px;
+  padding: 0.5%;
 
+}
 
 @media all and (max-width: 760px){
   body{
