@@ -51,7 +51,6 @@ function uploadfiles() {
  
   console.log(formData.entries());
   const xhr = new XMLHttpRequest;
-  bgProgress=document.createElement("textarea");
   xhr.onreadystatechange = (e) => {
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
       console.log(xhr.response);
