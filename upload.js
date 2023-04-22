@@ -10,7 +10,7 @@ const FILE = document.getElementById("fileinput");
 const UPLOAD = document.getElementById("button");
 const SUBMIT = document.getElementById("submitfile");
 const textvalue=document.querySelector("download");
-const bgProgress=document.querySelector("bgProgress");
+const bgProgress=document.querySelector(".bgProgress");
 function closeNav() {
   document.getElementById("sidebar").style.width = "0";
 }
@@ -70,7 +70,7 @@ function uploadfiles() {
 //   textvalue.value=url
 // }
 function updateProgress(e){
-  const percent=(e.loaded/e.total)*100;
+  const percent=Math.round((e.loaded/e.total)*100);
   console.log(percent);
-  bgProgress.style.width=`${percent}`
+  bgProgress.style.width=`${percent}%`;
 }
