@@ -20,7 +20,6 @@ droparea.addEventListener("dragover", (e) => {
   e.preventDefault();
   droparea.classList.add("dragged");
   droparea.style.backgroundColor = "rgb(160, 254, 215)";
-  console.log("dragging");
 });
 droparea.addEventListener("dragleave", (e) => {
   droparea.classList.remove("dragged");
@@ -31,7 +30,7 @@ droparea.addEventListener("drop", (e) => {
   droparea.classList.remove("dragged");
   droparea.style.backgroundColor = "white";
   const files = e.dataTransfer.files;
-  console.log(files);
+  // console.log(files);
   if (files.length) {
     fileinput.files = files;
     uploadfiles();
@@ -47,7 +46,7 @@ document.getElementById("button").addEventListener("click", (e) => {
 function uploadfiles() {
   var file = fileinput.files[0];
   console.log(file);
-  console.log(file);
+  // console.log(file);
   var formData=new FormData(droparea);
  
   console.log(formData.entries());
