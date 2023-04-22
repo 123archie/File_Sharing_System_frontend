@@ -1,4 +1,4 @@
-const { log } = require("console");
+// const { log } = require("console");
 
 let droparea = document.getElementById("dropbox");
 var form = document.getElementById("form");
