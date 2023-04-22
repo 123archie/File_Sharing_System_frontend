@@ -120,6 +120,7 @@ a #hamburger:hover {
   background-color: #244541;
 }
 .upload{
+  visibility: hidden;
   float:right;
   margin-right: 10%;
   width:600px;

@@ -10,7 +10,8 @@ const FILE = document.getElementById("fileinput");
 const UPLOAD = document.getElementById("button");
 const SUBMIT = document.getElementById("submitfile");
 const textvalue=document.querySelector("download");
-const bgProgress=document.querySelector(".bgProgress");
+const bgProgress=document.querySelector(".bgProgess");
+const upload=document.querySelector(".upload");
 function closeNav() {
   document.getElementById("sidebar").style.width = "0";
 }
@@ -52,7 +53,7 @@ function uploadfiles() {
  
   console.log(formData.entries());
   const xhr = new XMLHttpRequest;
-  
+  upload.style.visibility="visible";
   xhr.onreadystatechange = (e) => {
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
       console.log(xhr.response);
