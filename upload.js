@@ -55,6 +55,7 @@ function uploadfiles() {
   
   xhr.onreadystatechange = (e) => {
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
+      document.querySelector(".upload").style.visibility="hidden";
       console.log(xhr.response);
         }
   }
@@ -65,10 +66,6 @@ function uploadfiles() {
   console.log(formData.entries());
   xhr.send(formData);
 };
-// const showLink=({file:url})=>{
-//   console.log(url);
-//   textvalue.value=url
-// }
 function updateProgress(e){
   const percent=Math.round((e.loaded/e.total)*100);
   console.log(percent);
