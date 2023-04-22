@@ -9,7 +9,7 @@ const uploadURL=`${host}/test`
 const FILE = document.getElementById("fileinput");
 const UPLOAD = document.getElementById("button");
 const SUBMIT = document.getElementById("submitfile");
-const textvalue=document.querySelector("download");
+const textvalue=document.querySelector("#download");
 const bgProgress=document.querySelector(".bgProgress");
 function closeNav() {
   document.getElementById("sidebar").style.width = "0";
@@ -55,8 +55,12 @@ function uploadfiles() {
   
   xhr.onreadystatechange = (e) => {
     if (xhr.readyState === xhr.DONE  && xhr.status==200) {
-      document.querySelector(".upload").style.visibility="hidden";
-      console.log(xhr.response);
+      document.querySelector(".upload").remove();
+      document.body.appendChild(document.createTextNode("File uploaded successfully"));
+      document.body.appendChild(document.createTextNode("Download link to the file:"));
+      textvalue.value=xhr.response;
+      document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
+      console.log(xhr.response.value);
         }
   }
   xhr.upload.onprogress=updateProgress;
