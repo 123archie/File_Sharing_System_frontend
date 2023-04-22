@@ -60,7 +60,7 @@ function uploadfiles() {
       document.querySelector(".upload").remove();
       document.body.appendChild(document.createTextNode("File uploaded successfully"));
       document.body.appendChild(document.createTextNode("Download link to the file:"));
-      showLink(xhr.response);
+      showLink(JSON.parse(xhr.response));
       document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
       console.log(xhr.response);
         }
@@ -77,9 +77,9 @@ function updateProgress(e){
   console.log(percent);
   bgProgress.style.width=`${percent}%`;
 }
-const showLink=({file : url})=>{
-  console.log(url);
-  download.value=url;
+const showLink=({file})=>{
+  console.log(file);
+  // download.value=file;
 
 }
 
