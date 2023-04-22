@@ -1,5 +1,7 @@
 // const { log } = require("console");
 
+// const { url } = require("inspector");
+
 let droparea = document.getElementById("dropbox");
 var form = document.getElementById("form");
 const fileinput = document.getElementById("fileInput");
@@ -58,9 +60,9 @@ function uploadfiles() {
       document.querySelector(".upload").remove();
       document.body.appendChild(document.createTextNode("File uploaded successfully"));
       document.body.appendChild(document.createTextNode("Download link to the file:"));
-      textvalue.value=xhr.responseText;
+      showLink(xhr.response);
       document.body.appendChild(document.createTextNode("This link will expire in 24 hrs."));
-      console.log(xhr.response.value);
+      console.log(xhr.response);
         }
   }
   xhr.upload.onprogress=updateProgress;
@@ -75,3 +77,9 @@ function updateProgress(e){
   console.log(percent);
   bgProgress.style.width=`${percent}%`;
 }
+const showLink=({file : url})=>{
+  console.log(url);
+  download.value=url;
+
+}
+
