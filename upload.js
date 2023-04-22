@@ -1,7 +1,3 @@
-// const { log } = require("console");
-
-// const { url } = require("inspector");
-
 let droparea = document.getElementById("dropbox");
 var form = document.getElementById("form");
 const fileinput = document.getElementById("fileInput");
@@ -49,6 +45,7 @@ document.getElementById("button").addEventListener("click", (e) => {
 });
 function uploadfiles() {
   var file = fileinput.files[0];
+ console.log(file)
   var formData=new FormData(droparea);
   formData.append('myfile', JSON.stringify(file[0]));
  
@@ -77,9 +74,9 @@ function updateProgress(e){
   console.log(percent);
   bgProgress.style.width=`${percent}%`;
 }
-const showLink=({file})=>{
-  console.log(file);
-  // download.value=file;
+const showLink=({download:url})=>{
+  console.log(url);
+  download.value=url;
 
 }
 
