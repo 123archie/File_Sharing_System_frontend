@@ -118,9 +118,11 @@ a #hamburger:hover {
   background-color: #244541;
 }
 .upload{
+  display: block;
   float:right;
   margin-right: 10%;
   width:600px;
+  margin-top: -8%;
 }
 .Upload{
   color: #244541;
@@ -153,5 +155,53 @@ a #hamburger:hover {
   border:3px solid #18a292;
   border-radius: 15px;
   padding: 0.5%;
+  margin-top: -4.5%;
+}
+@media only screen and (max-width: 600px) {
+body{
+  overflow-y: hidden;
+}
+nav {
+  position: sticky;
+  background-color: #18a292;
+  border: 0%;
+  margin: 0%;
+}
+  #hamburger{
+    visibility: hidden;
+  }
+ 
+  #file_transfer{
+    display: block;
+    width: 90vw;
+    width: 90vw;
+    margin-top: 0%;
+    margin-bottom: 0.1px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  #dropbox{
+    visibility: hidden;
+  }
+  .upload{
+   /* display: block; */
+   width: 100vw;
+   margin-top: -41%;
+   margin-left: auto;
+   margin-right: auto;
 
+  }
+  #form{
+    display: block;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.01px;
+  }
+  #download{
+    visibility: hidden;
+  }
+  
 }
