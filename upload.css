@@ -203,7 +203,11 @@ nav {
     margin-top: -0.01px;
   }
   #download{
-    visibility: hidden;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -23%;
   }
+  
   
 }
