@@ -145,6 +145,13 @@ a #hamburger:hover {
   height: 15px;
   border-radius: 11px;
   
+}#downloadlabel{
+  float: right;
+  color: #244541;
+  margin-bottom: 5px;
+  font-family: "League Spartan", sans-serif;
+  margin-top: -1;
+  margin-right: 43%;
 }
 #download{
   float:right;
@@ -156,8 +163,12 @@ a #hamburger:hover {
   border:3px solid #18a292;
   border-radius: 15px;
   padding: 0.5%;
-  margin-top: -4.5%;
+  margin-top: -0.%;
 }
+#Download{
+  float: right;
+}
+
 @media only screen and (max-width: 600px) {
 body{
   overflow-y: hidden;
