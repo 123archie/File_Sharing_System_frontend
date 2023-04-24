@@ -187,7 +187,7 @@ nav {
     visibility: hidden;
   }
   .upload{
-   /* display: block; */
+   display: block;
    width: 100vw;
    margin-top: -41%;
    margin-left: auto;
