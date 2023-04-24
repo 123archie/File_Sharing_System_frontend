@@ -160,6 +160,8 @@ a #hamburger:hover {
 @media only screen and (max-width: 600px) {
 body{
   overflow-y: hidden;
+  overflow-x: hidden;
+
 }
 nav {
   position: sticky;
