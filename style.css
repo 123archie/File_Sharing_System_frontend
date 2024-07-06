@@ -37,18 +37,18 @@ a #form_btn:hover {
   background-color: #244541;
 }
 @media all and (max-width: 760px) {
-  #image {
-    margin-top: 25%;
-    margin-bottom: 0.1px;
-    display: inline-flex;
+  img {
+    max-width: 90vw;
+    max-height: 90vw;
     justify-content: center;
   }
-  img {
-    max-height: 90vw;
-    max-width: 90vw;
+  #image2 {
+    display: none;
+  }h2{
+    display: none;
   }
   p {
-    margin-top: 10%;
+   display: none;
   }
 
   #upload {
