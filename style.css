@@ -36,6 +36,13 @@ a #form_btn:hover {
   color: white;
   background-color: #244541;
 }
+#page-loader{
+  display: flex;
+  margin-left: 50%;
+  justify-content: center;
+  z-index: 1px;
+  visibility: hidden;
+}
 @media all and (max-width: 760px) {
   img {
     max-width: 90vw;
