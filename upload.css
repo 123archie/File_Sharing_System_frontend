@@ -233,6 +233,10 @@ nav {
     border: 2px solid #18a292;
     border-radius: 10px;
   }
-  
+  #downloadlabel{
+    float: right;
+    color: #244541;
+    
+  }
   
 }
