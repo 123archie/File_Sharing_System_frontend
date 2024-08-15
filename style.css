@@ -36,13 +36,14 @@ a #form_btn:hover {
   color: white;
   background-color: #244541;
 }
-#page-loader{
-  display: flex;
+/* #page-loader{
+  position: absolute;
+  text-align: center;
   margin-left: 50%;
   justify-content: center;
-  z-index:3;
+  z-index:1;
   visibility: hidden;
-}
+} */
 @media all and (max-width: 760px) {
   img {
     max-width: 90vw;
