@@ -2,7 +2,7 @@
 
 body {
   background: linear-gradient(90deg, #60c1b6, #b5e9e3);
-  overflow-y: hidden;}
+  }
 #illustration {
   float: right;
   text-align: center;
@@ -19,10 +19,7 @@ body {
   color:white;
 }
 p{
-  display: flex;
   font-size: x-large;
-  align-self: center;
-  
 }
 #form_btn {
   width: 400px;
