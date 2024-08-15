@@ -175,6 +175,10 @@ body{
   overflow-x: hidden;
 
 }
+#button{
+  width: 80%;
+  margin-left: 10%;
+}
 nav {
   position: sticky;
   background-color: #18a292;
